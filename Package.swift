@@ -1,16 +1,9 @@
-//
-//  Package.swift
-//  
-//
-//  Created by SemihTOY on 6.10.2023.
-//
-
 // swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
     name: "STNetwork",
-    platforms: [.iOS(.v13)],  // Desteklenen platform ve sürüm
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "STNetwork",
@@ -18,14 +11,12 @@ let package = Package(
         ),
     ],
     dependencies: [
-        // Bağımlılıklarınızı burada belirtin. Örnek:
-         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0")
-	 .package(url: "https://github.com/semihtoy/STNetwork.git", from: "1.0.1")
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0")
     ],
     targets: [
         .target(
             name: "STNetwork",
-            dependencies: []  // Eğer bağımlılıklarınız varsa bu kısıma ekleyin.
+            dependencies: ["Alamofire"]
         ),
         .testTarget(
             name: "STNetworkTests",
@@ -33,4 +24,5 @@ let package = Package(
         ),
     ]
 )
+
 
