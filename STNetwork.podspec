@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/semihtoy/STNetwork.git', :tag => '1.0.0' }
   s.source_files     = 'STNetwork/**/*.{h,swift}'
   s.swift_version    = '5.0'
-end
+  s.dependency 'Alamofire'
 
+end
