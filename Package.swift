@@ -20,6 +20,7 @@ let package = Package(
     dependencies: [
         // Bağımlılıklarınızı burada belirtin. Örnek:
          .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0")
+	 .package(url: "https://github.com/semihtoy/STNetwork.git", from: "1.0.1")
     ],
     targets: [
         .target(
