@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 public struct CharacterListResponse : Codable {
   public let info : Info?
   public let characters : [RMCharacter]?
@@ -14,5 +15,4 @@ public struct CharacterListResponse : Codable {
     case info
     case characters = "results"
   }
-
 }
