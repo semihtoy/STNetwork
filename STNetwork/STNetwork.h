@@ -2,7 +2,7 @@
 //  STNetwork.h
 //  STNetwork
 //
-//  Created by SemihTOY on 5.10.2023.
+//  Created by SemihTOY on 28.10.2023.
 //
 
 #import <Foundation/Foundation.h>
